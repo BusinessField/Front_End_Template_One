@@ -102,8 +102,15 @@ body {
     height: 100%;
 }
 
-.scroll-to-top:hover i {
-    animation: up-and-down .3s infinite;
+@media (max-width: 767px) {
+    .scroll-to-top:hover i {
+        animation: up-and-down .3s;
+    }
+}
+@media (min-width: 768px) {
+    .scroll-to-top:hover i {
+        animation: up-and-down .3s infinite;
+    }
 }
 
 @keyframes up-and-down {
