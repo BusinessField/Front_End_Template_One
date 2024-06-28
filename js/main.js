@@ -1,10 +1,18 @@
 // Show and Hide The Nav
-let navButton = document.querySelector(".header .links");
+let navButton = document.querySelector(".header .links i");
 let nav = document.querySelector(".header .links ul");
 
 navButton.onclick = function () {
     nav.classList.toggle("show");
 }
+
+document.addEventListener("click", (e) => {
+   if (e.target !== navButton) {
+        if (nav.classList.contains("show")) {
+            nav.classList.remove("show");
+        }
+    }
+});
 
 // Add Scroll to Top Button
 let scrollToTop = document.querySelector(".scroll-to-top");

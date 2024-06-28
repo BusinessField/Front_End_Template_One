@@ -140,10 +140,6 @@ body {
     cursor: pointer;
 }
 
-.header .links:hover .icon span:nth-child(2) {
-    width: 100%;
-}
-
 .header .links .icon {
     width: 30px;
     display: flex;
@@ -151,24 +147,6 @@ body {
     justify-content: flex-end;
 }
 
-.header .links .icon span {
-    background-color: #333;
-    margin-bottom: 5px;
-    height: 3px;
-}
-
-.header .links .icon span:first-child {
-    width: 100%;
-}
-
-.header .links .icon span:nth-child(2) {
-    width: 60%;
-    transition: var(--main-duration);
-}
-
-.header .links .icon span:last-child {
-    width: 100%;
-}
 
 .header .links ul {
     list-style: none;
